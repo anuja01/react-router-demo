@@ -8,14 +8,19 @@ import RoutingWithAuth from './components/RoutingWithAuth';
 export default function App() {
   return (
     <>
+    <div>Basic routing</div>
       <BasicRouting />
       <hr />
+      <div>Nested routing</div>
       <NestedRouting />
       <hr />
+      <div>More on hooks available</div>
       <MoreHooks />
       <hr />
+      <div>Us a routing config</div>
       <RoutingConfig />
       <hr />
+      <div>Routing with auth (Secure route)</div>
       <RoutingWithAuth />
     </>
   );

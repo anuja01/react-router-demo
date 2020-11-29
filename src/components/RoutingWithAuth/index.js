@@ -54,7 +54,8 @@ const fakeAuth = {
 
 // A wrapper for <Route> that redirects to the login
 // screen if you're not yet authenticated.
-function PrivateRoute({ children, ...rest }) {
+function PrivateRoute(props) {
+    const {children, ...rest} = props
     return (
         <Route
             {...rest}

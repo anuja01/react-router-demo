@@ -25,8 +25,8 @@ export default function BasicRouting() {
                 </nav>
 
                 <Switch>
-                    <Route path='/about'>
-                        <About />
+                    <Route path='/about' component={About}>
+                        {/* <About /> */}
                     </Route>
                     <Route path='/users'>
                         <Users />
