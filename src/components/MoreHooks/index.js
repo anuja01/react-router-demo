@@ -7,7 +7,13 @@ import {
     useHistory,
     useLocation
 } from 'react-router-dom';
-
+/**
+ * useParams() - Provides access to search parameters in the URL
+ * useRouteMatch() - Provides access to the match object. A primary use case would be to construct nested paths.
+ * useLocation() - Provides access to the location prop in React Router, A primary use case for this would be to access the query params or the complete route string.
+ * useHistory() - Provides access to the history prop in React Router. A primary use case would be for programmatic routing with functions, like push, replace, etc.
+ * 
+ */
 export const MoreHooks = () => {
     return (
         <Router>

@@ -32,8 +32,9 @@ export default function NestedRouting() {
                         <About />
                     </Route>
                     <Route path="/topics">
-                        {/* can use useRouteMatch() hook to get the url pattern */}
-                        <Topics />
+                        {/* can use useRouteMatch() hook to get the url pattern
+                            within Topics we have another set of routing */}
+                        <Topics /> 
                     </Route>
                     <Route path="/">
                         <Home />
@@ -53,7 +54,7 @@ function Home() {
 function About() {
     let match = useRouteMatch()
     console.log(match)
-    let { aboutId } = useParams()
+    let { aboutId } = useParams() // param given in <Switch><Route></></>
     console.log(aboutId)
     return <h2>About {aboutId}</h2>;
 }

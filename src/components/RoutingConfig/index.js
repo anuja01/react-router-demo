@@ -24,7 +24,7 @@ const Tacos = ({ routes }) => {
               <Link to="/tacos/cart">Cart</Link>
             </li>
           </ul>
-    
+        {/* iterating nested routes passed in main routes object */}
           <Switch>
             {routes.map((route, i) => (
               <RouteTo key={i} {...route} />
@@ -55,6 +55,7 @@ const routes = [
     {
         path: "/tacos",
         component: Tacos,
+        // below property contains detals for nested routing. Can iterate this and use for nested routing
         routes: [
             {
                 path: '/tacos/bus',
